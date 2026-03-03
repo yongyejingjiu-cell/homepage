@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT学習クエスト 利用規約">
+    <title>利用規約 - IT学習クエスト</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-primary: #0a0a1a;
+            --bg-secondary: #12122a;
+            --bg-card: #1a1a3e;
+            --text-primary: #f0f0f8;
+            --text-secondary: #a0a0c0;
+            --accent-purple: #6C5CE7;
+            --accent-indigo: #A29BFE;
+            --border-color: rgba(108, 92, 231, 0.2);
+            --gradient-primary: linear-gradient(135deg, #6C5CE7, #A29BFE);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--accent-indigo);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .header {
+            background: rgba(10, 10, 26, 0.95);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--border-color);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--text-primary);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .header-logo:hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .header-logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+        }
+
+        .header-logo span {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header-back {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .header-back:hover {
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px 100px;
+        }
+
+        .page-title {
+            font-size: 2.2rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 48px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            padding-left: 16px;
+            border-left: 3px solid var(--accent-purple);
+            line-height: 1.4;
+        }
+
+        .section-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 24px 28px;
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.9;
+        }
+
+        .section-content p {
+            margin-bottom: 12px;
+        }
+
+        .section-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        .section-content ul,
+        .section-content ol {
+            padding-left: 24px;
+            margin: 8px 0;
+        }
+
+        .section-content li {
+            margin-bottom: 6px;
+        }
+
+        .section-content strong {
+            color: var(--text-primary);
+        }
+
+        .footer {
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+            padding: 32px 24px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        .footer a {
+            color: var(--text-secondary);
+            margin: 0 12px;
+        }
+
+        .footer-links {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 600px) {
+            .page-title {
+                font-size: 1.6rem;
+            }
+
+            .section-content {
+                padding: 18px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="header-logo">
+                <img src="icon.png" alt="IT学習クエスト">
+                <span>IT学習クエスト</span>
+            </a>
+            <a href="index.html" class="header-back">← トップページに戻る</a>
+        </div>
+    </header>
+
+    <main class="main">
+        <h1 class="page-title">利用規約</h1>
+        <p class="page-subtitle">最終更新日: 2026年3月3日</p>
+
+        <div class="section">
+            <h2 class="section-title">第1条（目的）</h2>
+            <div class="section-content">
+                <p>本利用規約（以下「本規約」）は、IT学習クエスト（以下「本アプリ」）の利用に関する条件を定めるものです。ユーザーは本規約に同意のうえ、本アプリをご利用ください。</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第2条（定義）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>「ユーザー」とは、本アプリを利用するすべての個人を指します。</li>
+                    <li>「コンテンツ」とは、本アプリ内で提供される学習教材、クイズ、テキスト、画像等のすべての情報を指します。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第3条（利用条件）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>本アプリは学習支援を目的として提供されます。</li>
+                    <li>ユーザーは、以下の行為を行ってはなりません。
+                        <ul>
+                            <li>不正な方法でXPやランキングを操作する行為</li>
+                            <li>他のユーザーに対する嫌がらせ行為</li>
+                            <li>本アプリのシステムに不正にアクセスする行為</li>
+                            <li>本アプリのコンテンツを無断で複製・転載する行為</li>
+                            <li>法令または公序良俗に反する行為</li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第4条（アカウントと認証）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>本アプリはGoogleアカウントによる認証を利用します。</li>
+                    <li>ユーザーは自身のアカウント情報を適切に管理する責任を負います。</li>
+                    <li>アカウントの不正利用により生じた損害について、当方は責任を負いません。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第5条（データの取り扱い）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>ユーザーの学習データは、サービス提供の目的で収集・保存されます。</li>
+                    <li>詳細は<a href="privacy.html">プライバシーポリシー</a>をご参照ください。</li>
+                    <li>ユーザーはいつでもデータの削除を要求できます。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第6条（知的財産権）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>本アプリおよびコンテンツに関する知的財産権は、当方に帰属します。</li>
+                    <li>ユーザーは、私的利用の範囲でのみコンテンツを利用できます。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第7条（サービスの変更・中断）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>当方は、事前の通知なくサービスの内容を変更・中断できるものとします。</li>
+                    <li>サービスの変更・中断に伴い生じた損害について、当方は責任を負いません。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第8条（免責事項）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>本アプリは「現状のまま」提供されます。</li>
+                    <li>学習効果や試験の合格を保証するものではありません。</li>
+                    <li>本アプリの利用に起因する損害について、当方は一切の責任を負いません。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第9条（規約の変更）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>当方は、本規約を変更できるものとします。</li>
+                    <li>変更後の規約は、本アプリ内での告知をもって効力を生じます。</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">第10条（準拠法・管轄裁判所）</h2>
+            <div class="section-content">
+                <ol>
+                    <li>本規約は日本法に準拠します。</li>
+                    <li>本規約に関する紛争は、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="index.html">トップページ</a>
+            <a href="privacy.html">プライバシーポリシー</a>
+            <a href="terms.html">利用規約</a>
+        </div>
+        <p>&copy; 2026 IT学習クエスト. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

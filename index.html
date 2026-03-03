@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IT学習クエスト - RPG風ゲーミフィケーションでIT資格取得・プログラミング学習を楽しく継続できるAndroidアプリ">
+    <meta name="keywords" content="IT学習, ITパスポート, 基本情報技術者, プログラミング, ゲーミフィケーション, 学習アプリ, Android">
+    <meta name="author" content="IT学習クエスト">
+    <meta property="og:title" content="IT学習クエスト - 冒険しながらITスキルを磨こう">
+    <meta property="og:description" content="RPG風ゲーミフィケーションでIT資格取得・プログラミング学習を楽しく継続できるAndroidアプリ">
+    <meta property="og:image" content="icon.png">
+    <meta property="og:type" content="website">
+    <title>IT学習クエスト - 冒険しながらITスキルを磨こう</title>
+    <link rel="icon" type="image/png" href="icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="icon.png" alt="IT学習クエスト" class="nav-logo-img">
+                <span class="nav-logo-text">IT学習クエスト</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#features" class="nav-link">機能紹介</a>
+                <a href="#courses" class="nav-link">コース</a>
+                <a href="#game-modes" class="nav-link">ゲームモード</a>
+                <a href="#screenshots" class="nav-link">スクリーンショット</a>
+                <a href="#tech-stack" class="nav-link">技術スタック</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー切替">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-effects">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Android App
+                </div>
+                <h1 class="hero-title">
+                    <span class="hero-title-line">冒険しながら</span>
+                    <span class="hero-title-line hero-title-gradient">ITスキルを磨こう</span>
+                </h1>
+                <p class="hero-description">
+                    RPG風ゲーミフィケーションで、IT資格取得やプログラミング学習を<br>
+                    楽しく、効率的に、そして継続的に。
+                </p>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">7+</span>
+                        <span class="hero-stat-label">学習コース</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">6+</span>
+                        <span class="hero-stat-label">ゲームモード</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-value">500+</span>
+                        <span class="hero-stat-label">学習コンテンツ</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#features" class="btn btn-primary">
+                        <span>機能を見る</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m6 9 6 6 6-6" />
+                        </svg>
+                    </a>
+                    <a href="#tech-stack" class="btn btn-secondary">
+                        技術スタック
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <img src="screenshot_home.png" alt="IT学習クエスト ホーム画面" class="phone-screen">
+                    </div>
+                    <div class="phone-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- 機能紹介 -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Features</span>
+                <h2 class="section-title">学習をもっと楽しく</h2>
+                <p class="section-subtitle">RPGの冒険のように、毎日の学習が待ち遠しくなる機能を搭載</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-large" data-aos="fade-up">
+                    <div class="feature-icon-wrapper feature-icon-purple">
+                        <span class="feature-icon">⚔️</span>
+                    </div>
+                    <h3 class="feature-title">デイリークエスト</h3>
+                    <p class="feature-desc">毎日更新されるクエストで学習習慣を自然に形成。メインクエストとサブクエストで充実した学習体験。</p>
+                    <div class="feature-tag-list">
+                        <span class="feature-tag">メインクエスト</span>
+                        <span class="feature-tag">サブクエスト</span>
+                        <span class="feature-tag">XP報酬</span>
+                    </div>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon-wrapper feature-icon-cyan">
+                        <span class="feature-icon">📈</span>
+                    </div>
+                    <h3 class="feature-title">レベル&XPシステム</h3>
+                    <p class="feature-desc">学習するたびにXPを獲得してレベルアップ。成長が目に見えるからモチベーションが続く。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon-wrapper feature-icon-gold">
+                        <span class="feature-icon">🔥</span>
+                    </div>
+                    <h3 class="feature-title">連続学習ストリーク</h3>
+                    <p class="feature-desc">毎日学習して連続記録を伸ばそう。ストリーク維持のために明日もログインしたくなる。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon-wrapper feature-icon-green">
+                        <span class="feature-icon">🧙</span>
+                    </div>
+                    <h3 class="feature-title">カスタムアバター</h3>
+                    <p class="feature-desc">自分だけのアバターを作成してカスタマイズ。学習を進めて新しいアイテムをアンロック。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="feature-icon-wrapper feature-icon-orange">
+                        <span class="feature-icon">🏆</span>
+                    </div>
+                    <h3 class="feature-title">ランキング</h3>
+                    <p class="feature-desc">週間ランキングで他の冒険者と競い合い。仲間の存在が学習の原動力に。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="feature-icon-wrapper feature-icon-pink">
+                        <span class="feature-icon">📖</span>
+                    </div>
+                    <h3 class="feature-title">冒険日記</h3>
+                    <p class="feature-desc">学習の振り返りを日記として記録。AIが学びをサポートして理解を深める。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="feature-icon-wrapper feature-icon-teal">
+                        <span class="feature-icon">🌳</span>
+                    </div>
+                    <h3 class="feature-title">スキルツリー</h3>
+                    <p class="feature-desc">コース別のスキルツリーで学習の全体像を把握。次に学ぶべき内容が一目でわかる。</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="feature-icon-wrapper feature-icon-indigo">
+                        <span class="feature-icon">🏪</span>
+                    </div>
+                    <h3 class="feature-title">ショップ&報酬</h3>
+                    <p class="feature-desc">コインやジェムを集めてアイテムを購入。デイリーログインボーナスで毎日お得。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コース -->
+    <section class="courses" id="courses">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Courses</span>
+                <h2 class="section-title">充実の学習コース</h2>
+                <p class="section-subtitle">IT資格からプログラミングまで、あなたの目標に合ったコースを選択</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card" data-aos="fade-up">
+                    <div class="course-card-header" style="--course-color: #6C5CE7">
+                        <span class="course-category-badge">🏆 IT資格</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(108, 92, 231, 0.15)">
+                            <span>📋</span>
+                        </div>
+                        <h3 class="course-name">ITパスポート</h3>
+                        <p class="course-desc">IT初心者の第一歩。社会人の基礎知識を習得</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot"></span>
+                                <span class="diff-dot"></span>
+                                入門
+                            </span>
+                            <span class="course-hours">約50時間</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-card-header" style="--course-color: #6C5CE7">
+                        <span class="course-category-badge">🏆 IT資格</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(85, 239, 196, 0.15)">
+                            <span>🔰</span>
+                        </div>
+                        <h3 class="course-name">基本情報技術者</h3>
+                        <p class="course-desc">ITエンジニアの登竜門。プログラミングと技術の基礎</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot"></span>
+                                標準
+                            </span>
+                            <span class="course-hours">約150時間</span>
+                        </div>
+                        <span class="course-popular-badge">🔥 人気</span>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-card-header" style="--course-color: #6C5CE7">
+                        <span class="course-category-badge">🏆 IT資格</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(253, 203, 110, 0.15)">
+                            <span>⚙️</span>
+                        </div>
+                        <h3 class="course-name">応用情報技術者</h3>
+                        <p class="course-desc">高度IT人材への一歩。マネジメントと応用技術</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot active"></span>
+                                上級
+                            </span>
+                            <span class="course-hours">約200時間</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-card-header" style="--course-color: #00B894">
+                        <span class="course-category-badge">🌍 英語</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(225, 112, 85, 0.15)">
+                            <span>🎧</span>
+                        </div>
+                        <h3 class="course-name">TOEIC L&R</h3>
+                        <p class="course-desc">ビジネス英語力を測る世界標準テスト</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot"></span>
+                                標準
+                            </span>
+                            <span class="course-hours">約100時間</span>
+                        </div>
+                        <span class="course-popular-badge">🔥 人気</span>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="course-card-header" style="--course-color: #0984E3">
+                        <span class="course-category-badge">💻 IT全般</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(0, 206, 201, 0.15)">
+                            <span>🌐</span>
+                        </div>
+                        <h3 class="course-name">Web開発入門</h3>
+                        <p class="course-desc">HTML/CSS/JavaScriptでWebサイトを作ろう</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot"></span>
+                                <span class="diff-dot"></span>
+                                入門
+                            </span>
+                            <span class="course-hours">約40時間</span>
+                        </div>
+                        <span class="course-new-badge">NEW</span>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="course-card-header" style="--course-color: #0984E3">
+                        <span class="course-category-badge">💻 IT全般</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(162, 155, 254, 0.15)">
+                            <span>👨‍💻</span>
+                        </div>
+                        <h3 class="course-name">プログラミング基礎</h3>
+                        <p class="course-desc">プログラミング的思考とコーディングの基本</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot"></span>
+                                <span class="diff-dot"></span>
+                                入門
+                            </span>
+                            <span class="course-hours">約30時間</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="course-card-header" style="--course-color: #0984E3">
+                        <span class="course-category-badge">💻 IT全般</span>
+                    </div>
+                    <div class="course-card-body">
+                        <div class="course-icon-wrapper" style="background: rgba(232, 67, 147, 0.15)">
+                            <span>📱</span>
+                        </div>
+                        <h3 class="course-name">アプリ開発技術</h3>
+                        <p class="course-desc">React NativeやAWSなどモダン開発技術を学ぼう</p>
+                        <div class="course-meta">
+                            <span class="course-difficulty">
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot active"></span>
+                                <span class="diff-dot active"></span>
+                                上級
+                            </span>
+                            <span class="course-hours">約120時間</span>
+                        </div>
+                        <span class="course-new-badge">NEW</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ゲームモード -->
+    <section class="game-modes" id="game-modes">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Game Modes</span>
+                <h2 class="section-title">6つのゲームモード</h2>
+                <p class="section-subtitle">飽きさせない多彩なゲームモードで、楽しみながら知識を定着</p>
+            </div>
+            <div class="game-modes-grid">
+                <div class="game-mode-card" data-aos="fade-up" style="--gm-color: #E17055">
+                    <div class="gm-icon-bg">
+                        <span class="gm-icon">⚡</span>
+                    </div>
+                    <h3 class="gm-title">速答クイズ</h3>
+                    <p class="gm-desc">制限時間内に素早く回答！コンボを繋げてハイスコアを狙おう。パック制で様々な分野をカバー。</p>
+                    <div class="gm-tags">
+                        <span>タイムアタック</span>
+                        <span>コンボ</span>
+                        <span>難易度別</span>
+                    </div>
+                </div>
+                <div class="game-mode-card" data-aos="fade-up" data-aos-delay="100" style="--gm-color: #6C5CE7">
+                    <div class="gm-icon-bg">
+                        <span class="gm-icon">🧩</span>
+                    </div>
+                    <h3 class="gm-title">コードパズル</h3>
+                    <p class="gm-desc">コードの穴埋めやロジック問題を解決。プログラミング的思考力を鍛える実践的なパズル。</p>
+                    <div class="gm-tags">
+                        <span>穴埋め</span>
+                        <span>多言語対応</span>
+                        <span>学習ポイント</span>
+                    </div>
+                </div>
+                <div class="game-mode-card" data-aos="fade-up" data-aos-delay="200" style="--gm-color: #00B894">
+                    <div class="gm-icon-bg">
+                        <span class="gm-icon">🐛</span>
+                    </div>
+                    <h3 class="gm-title">バグハント</h3>
+                    <p class="gm-desc">コードに潜むバグを見つけ出せ！実際の開発で遭遇するバグパターンを学べる実践的モード。</p>
+                    <div class="gm-tags">
+                        <span>デバッグ</span>
+                        <span>実践的</span>
+                        <span>解説付き</span>
+                    </div>
+                </div>
+                <div class="game-mode-card" data-aos="fade-up" data-aos-delay="300" style="--gm-color: #FDCB6E">
+                    <div class="gm-icon-bg">
+                        <span class="gm-icon">🃏</span>
+                    </div>
+                    <h3 class="gm-title">テック偉人カード</h3>
+                    <p class="gm-desc">IT史に名を残す偉人たちのカードをコレクション。歴史から学ぶテクノロジーの進化。</p>
+                    <div class="gm-tags">
+                        <span>コレクション</span>
+                        <span>レアリティ</span>
+                        <span>IT歴史</span>
+                    </div>
+                </div>
+                <div class="game-mode-card" data-aos="fade-up" data-aos-delay="400" style="--gm-color: #74B9FF">
+                    <div class="gm-icon-bg">
+                        <span class="gm-icon">🎲</span>
+                    </div>
+                    <h3 class="gm-title">IT用語しりとり</h3>
+                    <p class="gm-desc">AIとIT用語でしりとり対決！遊びながら自然にIT用語を覚えられる新感覚ワードゲーム。</p>
+                    <div class="gm-tags">
+                        <span>AI対戦</span>
+                        <span>用語学習</span>
+                        <span>辞典付き</span>
+                    </div>
+                </div>
+                <div class="game-mode-card" data-aos="fade-up" data-aos-delay="500" style="--gm-color: #A29BFE">
+                    <div class="gm-icon-bg">
+                        <span class="gm-icon">🏰</span>
+                    </div>
+                    <h3 class="gm-title">ストーリークエスト</h3>
+                    <p class="gm-desc">物語を通じてIT知識を学ぶ。選択肢によって展開が変わるインタラクティブなシナリオ。</p>
+                    <div class="gm-tags">
+                        <span>シナリオ</span>
+                        <span>選択式</span>
+                        <span>没入感</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- スクリーンショット -->
+    <section class="screenshots" id="screenshots">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Screenshots</span>
+                <h2 class="section-title">アプリの画面</h2>
+                <p class="section-subtitle">美しいUIで楽しい学習体験を実現</p>
+            </div>
+            <div class="screenshots-carousel">
+                <div class="screenshot-item" data-aos="fade-up">
+                    <div class="screenshot-phone">
+                        <div class="screenshot-phone-frame">
+                            <div class="screenshot-notch"></div>
+                            <img src="screenshot_home.png" alt="ホーム画面" class="screenshot-img" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="screenshot-label">ホーム画面</h3>
+                    <p class="screenshot-desc">ダッシュボードで学習状況を一目で把握</p>
+                </div>
+                <div class="screenshot-item" data-aos="fade-up" data-aos-delay="150">
+                    <div class="screenshot-phone">
+                        <div class="screenshot-phone-frame">
+                            <div class="screenshot-notch"></div>
+                            <img src="screenshot_quest.png" alt="クエスト画面" class="screenshot-img" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="screenshot-label">クエスト画面</h3>
+                    <p class="screenshot-desc">毎日のミッションでモチベーションを維持</p>
+                </div>
+                <div class="screenshot-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="screenshot-phone">
+                        <div class="screenshot-phone-frame">
+                            <div class="screenshot-notch"></div>
+                            <img src="screenshot_games.png" alt="ゲームモード画面" class="screenshot-img" loading="lazy">
+                        </div>
+                    </div>
+                    <h3 class="screenshot-label">ゲームモード</h3>
+                    <p class="screenshot-desc">多彩なモードで楽しく学習を継続</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技術スタック -->
+    <section class="tech-stack" id="tech-stack">
+        <div class="section-container">
+            <div class="section-header">
+                <span class="section-tag">Tech Stack</span>
+                <h2 class="section-title">技術スタック</h2>
+                <p class="section-subtitle">モダンな技術で構築された、高品質なアプリケーション</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-category" data-aos="fade-up">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">📱</span>
+                        フロントエンド
+                    </h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(97, 218, 251, 0.15); color: #61DAFB">⚛️
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">React Native</span>
+                                <span class="tech-item-desc">クロスプラットフォーム開発</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(49, 120, 198, 0.15); color: #3178C6">TS
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">TypeScript</span>
+                                <span class="tech-item-desc">型安全な開発</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(108, 92, 231, 0.15); color: #6C5CE7">🎨
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">React Navigation</span>
+                                <span class="tech-item-desc">画面遷移・タブナビゲーション</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(253, 203, 110, 0.15); color: #FDCB6E">✨
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">Reanimated</span>
+                                <span class="tech-item-desc">高パフォーマンスアニメーション</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">☁️</span>
+                        バックエンド
+                    </h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(255, 153, 0, 0.15); color: #FF9900">☁️
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">AWS</span>
+                                <span class="tech-item-desc">クラウドインフラ</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(0, 184, 148, 0.15); color: #00B894">🐳
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">Docker</span>
+                                <span class="tech-item-desc">コンテナ化・デプロイ</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(162, 155, 254, 0.15); color: #A29BFE">🔐
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">Google OAuth</span>
+                                <span class="tech-item-desc">認証・ログイン</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(116, 185, 255, 0.15); color: #74B9FF">📡
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">REST API</span>
+                                <span class="tech-item-desc">データ同期・サーバー通信</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="tech-category-title">
+                        <span class="tech-category-icon">🤖</span>
+                        AI & データ
+                    </h3>
+                    <div class="tech-items">
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(66, 133, 244, 0.15); color: #4285F4">🧠
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">Google Gemini AI</span>
+                                <span class="tech-item-desc">AI学習サポート</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(225, 112, 85, 0.15); color: #E17055">💾
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">AsyncStorage</span>
+                                <span class="tech-item-desc">ローカルデータ永続化</span>
+                            </div>
+                        </div>
+                        <div class="tech-item">
+                            <div class="tech-item-icon" style="background: rgba(232, 67, 147, 0.15); color: #E84393">🔄
+                            </div>
+                            <div class="tech-item-info">
+                                <span class="tech-item-name">データ同期</span>
+                                <span class="tech-item-desc">オフライン対応・自動同期</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta" id="cta">
+        <div class="cta-bg-effects">
+            <div class="cta-orb cta-orb-1"></div>
+            <div class="cta-orb cta-orb-2"></div>
+        </div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">冒険を始めよう</h2>
+                <p class="cta-desc">IT学習クエストで、楽しみながらITスキルを身につけよう。<br>あなたの学習冒険が、今日から始まる。</p>
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <span>✅</span> 完全無料
+                    </div>
+                    <div class="cta-feature">
+                        <span>✅</span> オフライン対応
+                    </div>
+                    <div class="cta-feature">
+                        <span>✅</span> AI搭載
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="icon.png" alt="IT学習クエスト" class="footer-logo">
+                    <span class="footer-brand-name">IT学習クエスト</span>
+                    <p class="footer-tagline">冒険しながらITスキルを磨こう</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <h4>アプリ</h4>
+                        <a href="#features">機能紹介</a>
+                        <a href="#courses">コース一覧</a>
+                        <a href="#game-modes">ゲームモード</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>技術</h4>
+                        <a href="#tech-stack">技術スタック</a>
+                        <a href="#screenshots">スクリーンショット</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <h4>法的情報</h4>
+                        <a href="privacy.html">プライバシーポリシー</a>
+                        <a href="terms.html">利用規約</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 IT学習クエスト. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
